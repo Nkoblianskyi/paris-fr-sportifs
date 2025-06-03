@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Shield, Award, Users } from "lucide-react"
 import FadeIn from "./animations/fade-in"
 import BounceIn from "./animations/bounce-in"
+import Image from "next/image"
 
 export default function Hero() {
   return (
@@ -13,9 +14,12 @@ export default function Hero() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center">
           <FadeIn delay={200}>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-shadow-lg">
-              Meilleurs Sites de Paris Sportifs en France
-            </h1>
+            <div className="flex items-center justify-center gap-4 mb-4">
+              <h1 className="text-3xl md:text-4xl font-bold mb-4 text-shadow-lg">
+                Meilleurs Sites de Paris Sportifs en France
+              </h1>
+              <Image src={'/france.png'} alt="Logo" width={32} height={32} className="mb-2"/>
+            </div>
           </FadeIn>
           <FadeIn delay={400}>
             <p className="text-lg mb-6 max-w-3xl mx-auto text-shadow">

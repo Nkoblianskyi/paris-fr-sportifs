@@ -13,28 +13,8 @@ export default function Header() {
               <div className="relative">
                 <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center animate-float">
                   {/* Custom football/soccer ball icon */}
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    height="24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="w-7 h-7 text-white"
-                  >
-                    <circle cx="12" cy="12" r="10" />
-                    <path d="M4.93 4.93l4.24 4.24" />
-                    <path d="M14.83 14.83l4.24 4.24" />
-                    <path d="M14.83 9.17l4.24-4.24" />
-                    <path d="M14.83 9.17l3.53-3.53" />
-                    <path d="M4.93 19.07l4.24-4.24" />
-                  </svg>
+                  <Image src={'/logo.png'} alt="Logo" width={32} height={32} />
                 </div>
-                {/* Subtle glow effect */}
-                <div className="absolute inset-0 bg-blue-400 opacity-30 rounded-full blur-md animate-pulse"></div>
               </div>
               <div>
                 <h1 className="text-xl md:text-2xl font-bold text-blue-900 gradient-text">PariFrSportifs</h1>
